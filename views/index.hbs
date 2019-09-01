@@ -1,0 +1,39 @@
+<div class="container py-5">
+
+  <div class="row">
+    <div class="col-12 col-lg-10 col-xl-8 mx-auto">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title mr-3">Account Login<i class="fas fa-sign-in-alt"></i></h5>
+          <hr>
+
+          <form method="POST" action="/">
+            <div class="form-group form-row">
+              <div class="col-md-8">
+                <input type="text" name="email" class="form-control" id="email" placeholder="Email"
+                  value="{{options.email}}">
+                <small class="text-muted form-text">Enter your email</small>
+              </div>
+            </div>
+
+            <div class="form-group form-row">
+              <div class="col-md-8">
+                <input type="text" name="password" class="form-control" id="password" placeholder="Password"
+                  value="{{options.password}}">
+                <small class="text-muted form-text">Enter your password</small>
+              </div>
+            </div>
+
+            {{#if errorMessage }}
+            <div class="alert alert-danger" role="alert">
+              <span class="mr-2">{{errorMessage}}</span>
+            </div>
+            {{/if}}
+
+            <button class="btn btn-success" type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
