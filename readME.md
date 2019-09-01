@@ -9,7 +9,7 @@ It's a practice project from Alpha camp.
 1. Download the file from GitHub or clone on your teminal
 
    ```
-   git clone https://github.com/WeilinPan/
+   git clone https://github.com/WeilinPan/login_Demo
    ```
 
 2. Install npm
